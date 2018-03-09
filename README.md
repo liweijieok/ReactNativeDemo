@@ -9,7 +9,7 @@
 * [CSS](http://www.w3school.com.cn/css/index.asp)
 * [JavaScript](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Guide)
 ### React基础：
-包括React基础(JSX语法，props，state，声明周期等)，ES6语法，组件基本定义和使用.
+包括React基础(JSX语法，props，state，生命周期等)，ES6语法，组件基本定义和使用.
 推荐学习地址：
 * [官网](https://reactjs.org/docs/hello-world.html)
 * [ES6](http://es6.ruanyifeng.com/#README)
