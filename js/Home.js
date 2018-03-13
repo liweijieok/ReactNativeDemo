@@ -13,27 +13,34 @@ import {
 } from 'react-native';
 
 export default class Home extends Component {
+  static navigationOptions = {
+    title: 'ReactNative Demo',
+  };
+
   render() {
     return (
       <View style={{
         flex: 1,
-        alignItems: 'center',
         justifyContent: 'center',
+        alignItems: 'center',
       }}
       >
         <Button
+          style={{ marginBottom: 10 }}
           title="Navigator test"
           onPress={() => {
             this.props.navigation.navigate('First');
           }}
         />
         <Button
+          style={{ marginBottom: 10 }}
           title="Component test"
           onPress={() => {
             this.props.navigation.navigate('TestComponent');
           }}
         />
         <Button
+          style={{ marginBottom: 10 }}
           title="FlatList Component"
           onPress={() => {
             this.props.navigation.navigate('FlatListComponent');
@@ -44,3 +51,4 @@ export default class Home extends Component {
   }
 
 }
+

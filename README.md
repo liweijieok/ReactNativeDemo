@@ -17,4 +17,20 @@
 * [ReactNative中文网](https://reactnative.cn)
 * [官网](http://facebook.github.io/react-native/docs/getting-started.html)
 
+### 基础组件
+包括Text，InputText，Button，View，Img等常用组件。
+可以查看本demo的源码：[component](https://github.com/liweijieok/ReactNativeDemo/tree/master/js/component)
+或者是查看本人博客记录：
+
+### FlatList
+基本高性能列表组件
+
+### 异步与网络请求
+Promise框架
+fetch
+### 开源UI
+
+### 开源网络框架和Image加载框架
+
+### 原生通信
 

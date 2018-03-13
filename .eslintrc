@@ -36,7 +36,9 @@
     "strict": 2,
     "react/prefer-stateless-function": "off",
     "beforeSelfClosing": "always",
-    "react/prop-types": 0
+    "react/prop-types": 0,
+    "no-underscore-dangle": "off",
+    "global-require": "off"
   },
   "plugins": [
     "react",

@@ -10,6 +10,7 @@ import InputTextComponent from './js/component/InputTextComponent';
 import ImageComponent from './js/component/ImageComponent';
 import FlatListComponent from './js/flatlist/FlatListComponent';
 import TextComponent from './js/component/TextComponent';
+import TouchableComponent from './js/component/TouchableComponent';
 
 const RootStack = StackNavigator({
   Home: {
@@ -41,6 +42,9 @@ const RootStack = StackNavigator({
   },
   FlatListComponent: {
     screen: FlatListComponent,
+  },
+  TouchableComponent: {
+    screen: TouchableComponent,
   },
 }, {
   // 定义主页面

@@ -22,35 +22,52 @@ export default class TestComponent extends Component {
 
   render() {
     return (
-      <View>
+      <View style={{
+        flex: 1,
+        alignItems: 'center',
+        justifyContent: 'center',
+      }}
+      >
         <Button
+          style={{ marginBottom: 10 }}
           title="View"
           onPress={() => {
             this.props.navigation.navigate('ViewComponent');
           }}
         />
         <Button
+          style={{ marginBottom: 10 }}
           title="Button"
           onPress={() => {
             this.props.navigation.navigate('ButtonComponent');
           }}
         />
         <Button
+          style={{ marginBottom: 10 }}
           title="Text"
           onPress={() => {
             this.props.navigation.navigate('TextComponent');
           }}
         />
         <Button
+          style={{ marginBottom: 10 }}
           title="Input"
           onPress={() => {
             this.props.navigation.navigate('InputTextComponent');
           }}
         />
         <Button
+          style={{ marginBottom: 10 }}
           title="img"
           onPress={() => {
             this.props.navigation.navigate('ImageComponent');
+          }}
+        />
+        <Button
+          style={{ marginBottom: 10 }}
+          title="Touchable"
+          onPress={() => {
+            this.props.navigation.navigate('TouchableComponent');
           }}
         />
       </View>
