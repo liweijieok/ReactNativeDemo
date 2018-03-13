@@ -6,6 +6,10 @@ import Home from './js/Home';
 import ButtonComponent from './js/component/ButtonComponent';
 import TestComponent from './js/component/TestComponent';
 import ViewComponent from './js/component/ViewComponent';
+import InputTextComponent from './js/component/InputTextComponent';
+import ImageComponent from './js/component/ImageComponent';
+import FlatListComponent from './js/flatlist/FlatListComponent';
+import TextComponent from './js/component/TextComponent';
 
 const RootStack = StackNavigator({
   Home: {
@@ -23,8 +27,20 @@ const RootStack = StackNavigator({
   ButtonComponent: {
     screen: ButtonComponent,
   },
+  TextComponent: {
+    screen: TextComponent,
+  },
   ViewComponent: {
     screen: ViewComponent,
+  },
+  InputTextComponent: {
+    screen: InputTextComponent,
+  },
+  ImageComponent: {
+    screen: ImageComponent,
+  },
+  FlatListComponent: {
+    screen: FlatListComponent,
   },
 }, {
   // 定义主页面

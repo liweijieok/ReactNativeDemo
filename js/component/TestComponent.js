@@ -11,6 +11,9 @@ import {
   Button,
   View,
 } from 'react-native';
+import ImageComponent from './ImageComponent';
+import InputTextComponent from './InputTextComponent';
+import TextComponent from './TextComponent';
 
 export default class TestComponent extends Component {
   static navigationOptions = {
@@ -30,6 +33,24 @@ export default class TestComponent extends Component {
           title="Button"
           onPress={() => {
             this.props.navigation.navigate('ButtonComponent');
+          }}
+        />
+        <Button
+          title="Text"
+          onPress={() => {
+            this.props.navigation.navigate('TextComponent');
+          }}
+        />
+        <Button
+          title="Input"
+          onPress={() => {
+            this.props.navigation.navigate('InputTextComponent');
+          }}
+        />
+        <Button
+          title="img"
+          onPress={() => {
+            this.props.navigation.navigate('ImageComponent');
           }}
         />
       </View>

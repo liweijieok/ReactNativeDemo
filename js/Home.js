@@ -33,7 +33,14 @@ export default class Home extends Component {
             this.props.navigation.navigate('TestComponent');
           }}
         />
+        <Button
+          title="FlatList Component"
+          onPress={() => {
+            this.props.navigation.navigate('FlatListComponent');
+          }}
+        />
       </View>
     );
   }
+
 }

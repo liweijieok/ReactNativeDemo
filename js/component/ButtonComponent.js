@@ -8,7 +8,6 @@
  */
 import React, { Component } from 'react';
 import {
-  StyleSheet,
   Button,
   View,
 } from 'react-native';
@@ -16,7 +15,7 @@ import {
 
 export default class ButtonComponent extends Component {
   static navigationOptions = {
-    title: 'ButtomComponent',
+    title: 'ButtonComponent',
   };
 
   constructor(props) {
