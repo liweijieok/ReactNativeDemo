@@ -27,6 +27,12 @@ export default class Home extends Component {
             this.props.navigation.navigate('First');
           }}
         />
+        <Button
+          title="Component test"
+          onPress={() => {
+            this.props.navigation.navigate('TestComponent');
+          }}
+        />
       </View>
     );
   }

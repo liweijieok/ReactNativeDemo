@@ -14,8 +14,10 @@ import {
 } from 'react-native';
 
 export default class FirstComponent extends React.Component {
+
   static navigationOptions = {
-    title: 'first',
+    // headerTitle: 'first',
+    headerBackTitle: 'title',
   };
 
   render() {
@@ -30,6 +32,7 @@ export default class FirstComponent extends React.Component {
         <Button
           title="GO To Second"
           onPress={() => {
+            this.props.navigation.setParams({ second: 'Second Title' });
             this.props.navigation.navigate('Second', {
               tips: 'i\'m from first',
             });
@@ -38,5 +41,5 @@ export default class FirstComponent extends React.Component {
       </View>
     );
   }
-}
+};
 

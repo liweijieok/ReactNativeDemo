@@ -14,9 +14,23 @@ import {
 } from 'react-native';
 
 export default class SecondComponent extends React.Component {
-  static navigationOptions = {
-    title: 'Second',
+  // 通过函数定义navigation默认的数据
+  static navigationOptions = ({ navigation }) => {
+    const { params } = navigation.state;
+
+    return {
+      title: params ? params.title : 'A Nested Details Screen',
+      /* These values are used instead of the shared configuration! */
+      // headerStyle: {
+      //   backgroundColor: navigationOptions.headerTintColor,
+      // },
+      // headerTintColor: navigationOptions.headerStyle.backgroundColor,
+    };
   };
+  //
+  // static navigationOptions = {
+  //   title: 'Second',
+  // };
   render() {
     // 获取从别出来的数据
     const data = this.props.navigation.state.params;
@@ -40,6 +54,12 @@ export default class SecondComponent extends React.Component {
           title="Go First"
           onPress={() => {
             this.props.navigation.navigate('First');
+          }}
+        />
+        <Button
+          title="update title"
+          onPress={() => {
+            this.props.navigation.setParams({ title: 'Updated!' });
           }}
         />
       </View>
