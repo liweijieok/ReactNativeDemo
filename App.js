@@ -1,16 +1,16 @@
-import React from 'react';
-import { StackNavigator } from 'react-navigation'; // Version can be specified in package.json
-import FirstComponent from './js/navigation/FirstComponent';
-import SecondComponent from './js/navigation/SecondComponent';
-import Home from './js/Home';
-import ButtonComponent from './js/component/ButtonComponent';
-import TestComponent from './js/component/TestComponent';
-import ViewComponent from './js/component/ViewComponent';
-import InputTextComponent from './js/component/InputTextComponent';
-import ImageComponent from './js/component/ImageComponent';
-import FlatListComponent from './js/flatlist/FlatListComponent';
-import TextComponent from './js/component/TextComponent';
-import TouchableComponent from './js/component/TouchableComponent';
+import React from "react";
+import { StackNavigator } from "react-navigation"; // Version can be specified in package.json
+import FirstComponent from "./js/navigation/FirstComponent";
+import SecondComponent from "./js/navigation/SecondComponent";
+import Home from "./js/Home";
+import ButtonComponent from "./js/component/ButtonComponent";
+import TestComponent from "./js/component/TestComponent";
+import ViewComponent from "./js/component/ViewComponent";
+import InputTextComponent from "./js/component/InputTextComponent";
+import ImageComponent from "./js/component/ImageComponent";
+import FlatListDemoPage from "./js/flatlist/FlatListDemoPage";
+import TextComponent from "./js/component/TextComponent";
+import TouchableComponent from "./js/component/TouchableComponent";
 
 const RootStack = StackNavigator({
   Home: {
@@ -40,15 +40,15 @@ const RootStack = StackNavigator({
   ImageComponent: {
     screen: ImageComponent,
   },
-  FlatListComponent: {
-    screen: FlatListComponent,
+  FlatListDemoPage: {
+    screen: FlatListDemoPage,
   },
   TouchableComponent: {
     screen: TouchableComponent,
   },
 }, {
   // 定义主页面
-  initialRouteName: 'Home',
+  initialRouteName: "Home",
 });
 
 export default class App extends React.Component {
