@@ -23,14 +23,14 @@
 或者是查看本人博客记录：
 
 ### FlatList
-基本高性能列表组件
+[FlatList封装](http://liweijieok.github.io/2018/05/15/react/flstlist/)
 
 ### RN开发经验总结
-
+[RN开发经验总结](http://liweijieok.github.io/2018/05/15/react/rn_summary/)
 
 ### 异步与网络请求
-[Promise框架](http://liweijieok.github.io/2018/03/21/%E5%89%8D%E7%AB%AF/promise_learn/)
-fetch和async
+* [Promise框架](http://liweijieok.github.io/2018/03/21/%E5%89%8D%E7%AB%AF/promise_learn/)
+* fetch和async
 
 ### 开源UI
 

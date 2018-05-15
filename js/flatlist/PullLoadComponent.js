@@ -67,7 +67,7 @@ export default class PullLoadComponent extends Component {
     footerText: {},
     data: [],
     id: "flat_list",
-    onRequest: () => {
+    onRequest: (isRefresh) => {
     },
   };
 
@@ -76,7 +76,7 @@ export default class PullLoadComponent extends Component {
     //是否刷新/加载可用，外部可以通过调用方法设置，默认都可以
     this.state = {
       enableLoadMore: true,
-      enableFlash: true,
+      enableRefresh: true,
     };
   }
 
@@ -84,24 +84,29 @@ export default class PullLoadComponent extends Component {
    * 不会显示顶部可以刷新的UI
    * @param enableLoad
    */
-  setEnableLoad(enableLoad) {
+  setEnableLoad = (enableLoad) => {
     this.setState({
       enableLoad: enableLoad,
     });
-  }
+  };
 
 
   /**
    * 他是不会显示底部刷新的UI的
    * @param enableRefresh
    */
-  setEnableRefresh(enableRefresh) {
+  setEnableRefresh = (enableRefresh) => {
     this.setState({
       enableRefresh: enableRefresh,
     });
-  }
+  };
 
+  /**
+   * 刷新触发
+   * @private
+   */
   _onRefresh = () => {
+    console.log("_onRefresh");
     if (this._enableRefresh()) {
       this.props.onRequest && this.props.onRequest(true);
     }
@@ -113,10 +118,12 @@ export default class PullLoadComponent extends Component {
    * @returns {boolean}
    */
   _enableRefresh = () => {
+    console.log("_enableRefresh");
     return !(this.props.requestState === State.REFRESHING || this.props.requestState === State.LOADING);
   };
 
   _onEndReached = () => {
+    console.log("end");
     if (this._enableLoad()) {
       this.props.onRequest && this.props.onRequest(false);
     }
@@ -134,7 +141,13 @@ export default class PullLoadComponent extends Component {
     return requestState === State.NORMAL;
   };
 
+  /**
+   * 刷新或加载
+   * @param isRefresh
+   * @private
+   */
   _reRequest = (isRefresh) => {
+    //回调外部方法
     this.props.onRequest && this.props.onRequest(isRefresh);
   };
 
@@ -217,7 +230,8 @@ export default class PullLoadComponent extends Component {
    * @returns {*}
    */
   render() {
-    let {
+    //防止为null
+    const {
       renderItem = () => {
       }
     } = this.props;

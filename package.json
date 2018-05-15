@@ -29,6 +29,9 @@
     "prettier": "1.5.3",
     "react-test-renderer": "16.2.0"
   },
+  "resolutions": {
+    "react-native/metro": "^0.29.0"
+  },
   "jest": {
     "preset": "react-native"
   }

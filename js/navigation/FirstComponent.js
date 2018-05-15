@@ -17,7 +17,7 @@ export default class FirstComponent extends React.Component {
 
   static navigationOptions = {
     // headerTitle: 'first',
-    headerBackTitle: 'title',
+    title: 'FirstComponent',
   };
 
   render() {
