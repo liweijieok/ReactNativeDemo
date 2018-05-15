@@ -25,9 +25,13 @@
 ### FlatList
 基本高性能列表组件
 
+### RN开发经验总结
+
+
 ### 异步与网络请求
-Promise框架
-fetch
+[Promise框架](http://liweijieok.github.io/2018/03/21/%E5%89%8D%E7%AB%AF/promise_learn/)
+fetch和async
+
 ### 开源UI
 
 ### 开源网络框架和Image加载框架

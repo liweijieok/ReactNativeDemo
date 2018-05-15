@@ -7,6 +7,7 @@
  */
 import React from 'react';
 import { View, Image, Alert } from 'react-native';
+import ImageHolderComponent from "./ImageHolderComponent";
 
 export default class ImageComponent extends React.Component {
   static navigationOptions = {
@@ -21,6 +22,7 @@ export default class ImageComponent extends React.Component {
         justifyContent: 'center',
       }}
       >
+          <ImageHolderComponent url={"http:asca.jpg"}/>
         {/* 静态资源 */}
         <Image
           source={require('../../img/cute.jpeg')}
